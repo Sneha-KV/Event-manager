@@ -1,4 +1,5 @@
 
+Application on Code Sandbox: https://lki97.csb.app/
 This application consists of:
 ● A Home page to show a list of events. Display the name, description, company. 
 ● A form to add a new event and update the list after addition. At a minimum, save these fields: name, description, company, color (any web safe named color, like red). 
