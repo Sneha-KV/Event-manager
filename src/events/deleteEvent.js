@@ -1,18 +1,19 @@
-import {useState} from 'react'
+import {useState, useEffect} from 'react'
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 
 
-const DeleteEvent = ({event, modalClose, onDelete}) => {
+const DeleteEvent = ({event, showModal, modalClose, onDelete}) => {
     const [show, setShow] = useState(true); // to hide and show the modal
     const handleClose = () => {
-        modalClose(); 
         setShow(false);
+        modalClose();
     }
 
     // Hide the modal and make delete call
     const delEvent = (id) => {
         onDelete(id);
+        modalClose();
         setShow(false);
     }
 
