@@ -1,3 +1,11 @@
+# This application uses  rain-focus api
+This application consists of:
+● A Home page to show a list of events. Display the name, description, company. 
+● A form to add a new event and update the list after addition. At a minimum, save these fields: name, description, company, color (any web safe named color, like red). 
+● A delete option to remove an event and update the list after deletion. 
+● Update an event. At a minimum, update the name, description, company, color. 
+● Displays individual event info (name, description) in a modal or on a new page with the use of react-router. 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
