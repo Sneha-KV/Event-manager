@@ -44,3 +44,29 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@media (min-width: 570px) and (max-width: 900px){
+  .card-group, form {
+    -ms-flex-flow: column wrap;
+    flex-flow: column wrap;
+    margin: 1em 2em;
+  }
+  .event-details-header {
+    margin: 1em 0;
+  }
+  .add-edit-form label {
+    width: 100%
+  }
+}
+@media (max-width: 570px) {
+  .card-group,
+  form {
+    -ms-flex-flow: column wrap;
+    flex-flow: column wrap;
+    margin: 1em 0.2em;
+  }
+
+  .event-details-header {
+    margin: 1em 0;
+  }
+}

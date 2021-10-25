@@ -11,7 +11,7 @@ const CreateEditEvent = ({onEdit, onAdd}) => {
         id: state?.id || '',
         color: state?.color || 'red',
         name: state?.name || '',
-        isActive:state?.isActive || false,
+        isActive:state?.isActive === "false" ? false : !state?.isActive? false : true || false,
         company: state?.company || '',
         email: state?.email || '',
         phone: state?.phone || '',
@@ -121,7 +121,7 @@ const CreateEditEvent = ({onEdit, onAdd}) => {
                 <div className="form-group ">
                 <label className='form-check-label'>
                         Active?
-                        <input type='checkbox' className="form-check-input" placeholder='Set event Name' value={eventData.isActive} name="isActive" onChange={e=> setEventData({...eventData, isActive:e.target.value})} checked={eventData.isActive}/>
+                        <input type='checkbox' className="form-check-input" placeholder='Set event Name'  name="isActive" onChange={e=> setEventData({...eventData, isActive:Boolean(e.target.checked)})} checked={eventData.isActive}/>
                 
                 </label>
                 

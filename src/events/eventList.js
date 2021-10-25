@@ -53,7 +53,7 @@ const EventList = ({events, onDelete, onEdit}) => {
                                     <td>{event.date}</td>
                                     
                                     <td>{event.company}</td>
-                                    <td>{event.description} 
+                                    <td onClick={()=> openEvent(event, index)}>{event.description} 
                                             <Button variant="light" onClick={()=> openEvent(event, index)}> <FaExternalLinkAlt></FaExternalLinkAlt></Button>
                                     </td>
                                     <td>

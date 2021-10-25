@@ -30,22 +30,23 @@ const Event = ({onDelete}) => {
     const eventDisplay = (event) => {
         return <CardGroup>
                     <Card>
-                    <Card.Img variant="top" src={event.image} alt={event.description}/>
-                    <Card.Footer>
-                        <small className="text-muted">
-                            <Row>
-                                <Col><FaEnvelope/><a href={`mailto:${event.email}`}>{' '+ event.email}</a></Col>
-                                <Col><FaPhone/> {' '+ event.phone}</Col>
-                                <Col><FaFly/>{' '+ event.color}</Col>
-                            </Row>
-                        </small>
-                    </Card.Footer>
+                        <Card.Title>
+                                <h2>{event.name}</h2>
+                        </Card.Title>
+                        <Card.Img variant="top" src={event.image} alt={event.description}/>
+                        <Card.Footer>
+                            <small className="text-muted">
+                                <Row>
+                                    <Col><FaEnvelope/><a href={`mailto:${event.email}`}>{' '+ event.email}</a></Col>
+                                    <Col><FaPhone/> {' '+ event.phone}</Col>
+                                    <Col><FaFly/>{' '+ event.color}</Col>
+                                </Row>
+                            </small>
+                        </Card.Footer>
                     </Card>
                     <Card>
                         <Card.Body>
-                            <Card.Title>
-                                <h2>{event.name}</h2>
-                            </Card.Title>
+                            
                                 <Container>
                                     <Row>
                                         <Col>
