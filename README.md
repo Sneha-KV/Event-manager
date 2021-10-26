@@ -1,11 +1,14 @@
 
 Application on Code Sandbox: https://lki97.csb.app/
+
 This application consists of:
 ● A Home page to show a list of events. Display the name, description, company. 
 ● A form to add a new event and update the list after addition. At a minimum, save these fields: name, description, company, color (any web safe named color, like red). 
 ● A delete option to remove an event and update the list after deletion. 
 ● Update an event. At a minimum, update the name, description, company, color. 
-● Displays individual event info (name, description) in a modal or on a new page with the use of react-router. 
+● Displays individual event info (name, description) in a new page with the use of react-router. 
+
+![image](https://user-images.githubusercontent.com/62788140/138905275-de3d6f1b-cb7e-49ba-b300-cb1f5141ad14.png)
 
 # Getting Started with Create React App
 
